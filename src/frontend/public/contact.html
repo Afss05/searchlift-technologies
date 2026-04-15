@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — SearchLift Technologies | Get Your Free SEO Audit</title>
+  <meta name="description" content="Get in touch with SearchLift Technologies, Chennai. Book your free SEO audit or enquire about our digital marketing services. We respond within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--pd:#20417B;--pm:#1560bd;--pl:#1E90FF;--gr:linear-gradient(135deg,#20417B 0%,#1E90FF 100%);--gh:linear-gradient(160deg,#0f1f45 0%,#20417B 40%,#1560bd 70%,#1E90FF 100%);--td:#0f172a;--tm:#64748b;--bs:#f8fafc;--ba:#eef4fb;--r:14px;--sh:0 4px 24px rgba(30,60,130,.10);--sh2:0 12px 40px rgba(30,60,130,.20);--tr:.3s cubic-bezier(.4,0,.2,1)}
+    html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--td);background:#fff;overflow-x:hidden}
+    .container{max-width:1160px;margin:0 auto;padding:0 24px}
+    .tag{display:inline-block;background:rgba(30,144,255,.12);color:var(--pl);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:100px;padding:6px 18px;margin-bottom:16px}
+    .stitle{font-size:clamp(1.8rem,4vw,2.75rem);font-weight:800;line-height:1.18;color:var(--td);margin-bottom:16px}
+    .ssub{font-size:1.05rem;color:var(--tm);line-height:1.7}
+    .fu{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease}.fu.v{opacity:1;transform:translateY(0)}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .35s,box-shadow .35s}
+    #nav.sc{background:rgba(255,255,255,.97);box-shadow:0 2px 24px rgba(30,60,130,.12);backdrop-filter:blur(16px)}
+    .ni{max-width:1160px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nl{font-size:1.35rem;font-weight:900;text-decoration:none;background:var(--gr);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.02em}
+    .nls{display:flex;align-items:center;gap:4px;list-style:none}
+    .nls a{text-decoration:none;font-size:.92rem;font-weight:500;padding:7px 14px;border-radius:8px;color:rgba(255,255,255,.88);transition:var(--tr);position:relative}
+    #nav.sc .nls a{color:var(--td)}.nls a:hover{background:rgba(255,255,255,.15)}
+    #nav.sc .nls a:hover{background:var(--ba);color:var(--pl)}
+    .nls a.ac::after{content:'';position:absolute;bottom:2px;left:14px;right:14px;height:2px;background:var(--gr);border-radius:2px}
+    #nav.sc .nls a.ac{color:var(--pl)}
+    .ncb{background:var(--gr);color:#fff;border:none;border-radius:100px;padding:10px 22px;font-size:.88rem;font-weight:700;cursor:pointer;text-decoration:none;transition:var(--tr);box-shadow:0 2px 14px rgba(30,144,255,.35)}
+    .ncb:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(30,144,255,.52)}
+    .hb{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
+    .hb span{display:block;width:24px;height:2.5px;background:#fff;border-radius:2px;transition:var(--tr)}
+    #nav.sc .hb span{background:var(--td)}
+    .hb.op span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}.hb.op span:nth-child(2){opacity:0}.hb.op span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+    .mm{display:none;position:fixed;inset:0;background:rgba(15,31,69,.97);backdrop-filter:blur(16px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;pointer-events:none;transition:opacity .35s}
+    .mm.op{opacity:1;pointer-events:all;display:flex}
+    .mm a{text-decoration:none;font-size:1.5rem;font-weight:700;color:#fff;padding:14px 40px;border-radius:var(--r);transition:var(--tr)}
+    .mm a:hover,.mm a.ac{background:rgba(30,144,255,.2);color:var(--pl)}
+    .mcb{margin-top:24px;background:var(--gr);color:#fff;border:none;border-radius:100px;padding:14px 40px;font-size:1.05rem;font-weight:700;cursor:pointer;text-decoration:none}
+    /* PAGE HERO */
+    .ph{background:var(--gh);padding:140px 0 80px;position:relative;overflow:hidden}
+    .ph::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:80px;background:#fff;clip-path:ellipse(60% 100% at 50% 100%)}
+    .phc{text-align:center;position:relative;z-index:1}.phc h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;color:#fff;margin-bottom:16px;letter-spacing:-.03em}
+    .phc p{font-size:1.1rem;color:rgba(255,255,255,.78);max-width:560px;margin:0 auto;line-height:1.7}
+    .bc{display:flex;align-items:center;gap:8px;justify-content:center;margin-bottom:24px}
+    .bc a,.bc span{font-size:.85rem;color:rgba(255,255,255,.65);text-decoration:none}.bc a:hover{color:#fff}.bc .sep{color:rgba(255,255,255,.35)}
+    /* CONTACT MAIN */
+    #contact-main{padding:100px 0;background:#fff}
+    .contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
+    /* FORM */
+    .form-card{background:#fff;border-radius:20px;padding:48px 40px;box-shadow:var(--sh);border:1px solid rgba(30,60,130,.07)}
+    .form-card h2{font-size:1.5rem;font-weight:800;margin-bottom:8px}
+    .form-card>p{font-size:.92rem;color:var(--tm);margin-bottom:32px;line-height:1.6}
+    .form-group{margin-bottom:20px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .form-group label{display:block;font-size:.85rem;font-weight:600;color:var(--td);margin-bottom:6px}
+    .form-group label .req{color:var(--pl)}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.92rem;font-family:'Inter',sans-serif;color:var(--td);background:#fff;transition:var(--tr);outline:none}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--pl);box-shadow:0 0 0 3px rgba(30,144,255,.12)}
+    .form-group input.error,.form-group select.error,.form-group textarea.error{border-color:#ef4444;box-shadow:0 0 0 3px rgba(239,68,68,.1)}
+    .form-group textarea{resize:vertical;min-height:120px}
+    .field-error{font-size:.78rem;color:#ef4444;margin-top:5px;display:none}
+    .field-error.show{display:block}
+    .checkbox-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:24px}
+    .checkbox-row input[type=checkbox]{width:18px;height:18px;margin-top:2px;flex-shrink:0;accent-color:var(--pl);cursor:pointer}
+    .checkbox-row label{font-size:.85rem;color:var(--tm);line-height:1.5;cursor:pointer}
+    .checkbox-row label a{color:var(--pl);text-decoration:none}
+    .checkbox-row label a:hover{text-decoration:underline}
+    .submit-btn{width:100%;padding:15px;background:var(--gr);color:#fff;border:none;border-radius:100px;font-size:1rem;font-weight:700;cursor:pointer;transition:var(--tr);font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(30,144,255,.38)}
+    .submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(30,144,255,.55)}
+    .submit-btn:disabled{opacity:.7;cursor:not-allowed;transform:none}
+    /* SUCCESS */
+    .success-msg{display:none;text-align:center;padding:40px 20px}
+    .success-msg.show{display:block}
+    .success-icon{font-size:3.5rem;margin-bottom:16px}
+    .success-msg h3{font-size:1.4rem;font-weight:800;margin-bottom:8px;color:var(--td)}
+    .success-msg p{color:var(--tm);font-size:.95rem;line-height:1.6}
+    /* INFO */
+    .contact-info{padding-top:8px}
+    .contact-info h2{font-size:1.5rem;font-weight:800;margin-bottom:8px}
+    .contact-info>p{font-size:.92rem;color:var(--tm);margin-bottom:36px;line-height:1.6}
+    .info-card{display:flex;gap:16px;margin-bottom:28px;padding:24px;border-radius:16px;border:1px solid #e2e8f0;transition:var(--tr)}
+    .info-card:hover{border-color:rgba(30,144,255,.3);box-shadow:0 4px 20px rgba(30,144,255,.08);transform:translateY(-2px)}
+    .info-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(32,65,123,.1),rgba(30,144,255,.14));display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+    .info-label{font-size:.78rem;font-weight:700;color:var(--pl);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+    .info-value{font-size:.92rem;font-weight:600;color:var(--td);line-height:1.5}
+    .info-sub{font-size:.82rem;color:var(--tm);margin-top:2px}
+    /* HOURS */
+    .hours-card{background:var(--bs);border-radius:16px;padding:24px;margin-bottom:28px}
+    .hours-card h4{font-size:.88rem;font-weight:700;color:var(--td);margin-bottom:14px;text-transform:uppercase;letter-spacing:.06em}
+    .hour-row{display:flex;justify-content:space-between;font-size:.85rem;padding:6px 0;border-bottom:1px solid #e2e8f0}
+    .hour-row:last-child{border-bottom:none}
+    .hour-row .day{color:var(--tm)}
+    .hour-row .time{color:var(--td);font-weight:600}
+    .hour-row .closed{color:#ef4444;font-weight:600}
+    /* MAP */
+    #map-section{padding:80px 0;background:var(--bs)}
+    .map-container{border-radius:20px;overflow:hidden;box-shadow:var(--sh)}
+    .map-container iframe{width:100%;height:440px;border:none;display:block}
+    /* FAQ */
+    #faq{padding:80px 0;background:#fff}
+    .faq-grid{max-width:760px;margin:0 auto}
+    .faq-item{border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;margin-bottom:12px;transition:var(--tr)}
+    .faq-item.open{border-color:rgba(30,144,255,.3);box-shadow:0 4px 20px rgba(30,144,255,.08)}
+    .faq-q{padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:600;font-size:.95rem;color:var(--td);user-select:none}
+    .faq-arrow{width:24px;height:24px;border-radius:50%;background:var(--ba);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:var(--tr)}
+    .faq-item.open .faq-arrow{background:var(--gr);transform:rotate(180deg)}
+    .faq-arrow svg{color:var(--pd)}.faq-item.open .faq-arrow svg{color:#fff}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;padding:0 24px}
+    .faq-item.open .faq-a{max-height:200px;padding:0 24px 20px}
+    .faq-a p{font-size:.9rem;color:var(--tm);line-height:1.7}
+    /* FOOTER */
+    #ft{background:#0a1628;color:rgba(255,255,255,.75);padding:72px 0 0}
+    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px;margin-bottom:48px}
+    .fb p{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.6);max-width:280px;margin:12px 0 24px}
+    .soc{display:flex;gap:12px}
+    .si2{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:var(--tr);text-decoration:none;color:rgba(255,255,255,.75)}
+    .si2:hover{background:var(--gr);border-color:transparent;color:#fff;transform:translateY(-3px)}
+    .fc h4{font-size:.9rem;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px}
+    .fc ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .fc ul a{text-decoration:none;color:rgba(255,255,255,.6);font-size:.9rem;transition:var(--tr)}.fc ul a:hover{color:var(--pl);padding-left:4px}
+    .ci{display:flex;gap:12px;margin-bottom:14px}.ci span{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.5}
+    .fb2{border-top:1px solid rgba(255,255,255,.08);padding:24px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .fb2 p{font-size:.84rem;color:rgba(255,255,255,.4)}.fb2 a{color:var(--pl);text-decoration:none}
+    #bt{position:fixed;bottom:28px;right:28px;z-index:800;width:48px;height:48px;border-radius:50%;background:var(--gr);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(30,144,255,.45);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:var(--tr)}
+    #bt.v{opacity:1;pointer-events:all}#bt:hover{transform:translateY(-3px)}
+    @media(max-width:900px){.nls,.nav-cta{display:none}.hb{display:flex}.contact-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.form-row{grid-template-columns:1fr}.form-card{padding:28px 20px}.fg{grid-template-columns:1fr}.fb2{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <div class="ni">
+    <a href="index.html" class="nl">SearchLift</a>
+    <ul class="nls">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html" class="ac">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="#contact-main" class="ncb">Get Free Audit</a></div>
+    <button class="hb" id="hb" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mm" id="mm">
+  <a href="index.html">Home</a><a href="about.html">About</a>
+  <a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html" class="ac">Contact</a>
+  <a href="#contact-main" class="mcb">Get Free Audit</a>
+</div>
+
+<section class="ph">
+  <div class="container">
+    <div class="phc">
+      <div class="bc"><a href="index.html">Home</a><span class="sep">›</span><span>Contact</span></div>
+      <h1>Get Your Free SEO Audit</h1>
+      <p>Tell us about your business and we'll deliver a personalised digital marketing strategy — completely free, no strings attached.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact-main">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div class="form-card fu">
+        <h2>Send Us an Enquiry</h2>
+        <p>Fill in the form below and a member of our team will get back to you within 24 hours.</p>
+
+        <form id="contactForm" novalidate data-ocid="contact.form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="req">*</span></label>
+              <input type="text" id="firstName" name="firstName" placeholder="Raj" data-ocid="contact.firstname_input" />
+              <div class="field-error" id="firstName-err" data-ocid="contact.firstname_error">Please enter your first name.</div>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="req">*</span></label>
+              <input type="text" id="lastName" name="lastName" placeholder="Sharma" data-ocid="contact.lastname_input" />
+              <div class="field-error" id="lastName-err" data-ocid="contact.lastname_error">Please enter your last name.</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="raj.sharma@company.com" data-ocid="contact.email_input" />
+            <div class="field-error" id="email-err" data-ocid="contact.email_error">Please enter a valid email address.</div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98400 00000" data-ocid="contact.phone_input" />
+              <div class="field-error" id="phone-err" data-ocid="contact.phone_error">Please enter a valid phone number.</div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Website</label>
+              <input type="text" id="company" name="company" placeholder="yourwebsite.com" data-ocid="contact.company_input" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service You're Interested In <span class="req">*</span></label>
+            <select id="service" name="service" data-ocid="contact.service_select">
+              <option value="">Select a service...</option>
+              <option value="seo">SEO Services</option>
+              <option value="digital">Digital Marketing</option>
+              <option value="webdev">Website Development</option>
+              <option value="local">Local SEO</option>
+              <option value="social">Social Media Handling</option>
+              <option value="multiple">Multiple Services</option>
+            </select>
+            <div class="field-error" id="service-err" data-ocid="contact.service_error">Please select a service.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Goals <span class="req">*</span></label>
+            <textarea id="message" name="message" placeholder="Briefly describe your business, current digital presence, and what results you're hoping to achieve..." data-ocid="contact.message_textarea"></textarea>
+            <div class="field-error" id="message-err" data-ocid="contact.message_error">Please tell us a bit about your goals (at least 20 characters).</div>
+          </div>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="privacy" name="privacy" data-ocid="contact.privacy_checkbox" />
+            <label for="privacy">I agree to the <a href="#">Privacy Policy</a> and consent to being contacted by SearchLift Technologies regarding my enquiry.</label>
+          </div>
+          <div class="field-error" id="privacy-err" style="margin-top:-16px;margin-bottom:16px" data-ocid="contact.privacy_error">You must agree to our privacy policy to proceed.</div>
+
+          <button type="submit" class="submit-btn" id="submitBtn" data-ocid="contact.submit_button">
+            Send My Enquiry →
+          </button>
+        </form>
+
+        <div class="success-msg" id="successMsg" data-ocid="contact.success_state">
+          <div class="success-icon">🎉</div>
+          <h3>Enquiry Received!</h3>
+          <p>Thank you — we'll review your details and get back to you within 24 hours with a personalised response. Check your inbox for a confirmation email.</p>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info fu">
+        <div class="tag">Get in Touch</div>
+        <h2>We'd Love to Hear from You</h2>
+        <p>Whether you're ready to start a project or just want to learn more about how we can help, our team is ready to talk.</p>
+
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Visit Us</div>
+            <div class="info-value">3rd Floor, Nexus Tech Park<br>Anna Salai, Chennai – 600 002</div>
+            <div class="info-sub">Tamil Nadu, India</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <div>
+            <div class="info-label">Call Us</div>
+            <div class="info-value"><a href="tel:+914422001234" style="color:var(--td);text-decoration:none">+91 44 2200 1234</a></div>
+            <div class="info-sub">Mon–Fri 9:00 AM – 7:00 PM IST</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📧</div>
+          <div>
+            <div class="info-label">Email Us</div>
+            <div class="info-value"><a href="mailto:hello@searchlift.in" style="color:var(--td);text-decoration:none">hello@searchlift.in</a></div>
+            <div class="info-sub">We respond within 24 hours</div>
+          </div>
+        </div>
+
+        <div class="hours-card">
+          <h4>Business Hours</h4>
+          <div class="hour-row"><span class="day">Monday – Friday</span><span class="time">9:00 AM – 7:00 PM</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span class="time">10:00 AM – 4:00 PM</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span class="closed">Closed</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="map-section">
+  <div class="container">
+    <div class="map-container fu">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62209.85609490735!2d80.20801504999999!3d13.0826802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d56aabb977%3A0xd4a1c6c87ee28e4e!2sAnna%20Salai%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1712000000000!5m2!1sen!2sin"
+        title="SearchLift Technologies Office Location — Anna Salai, Chennai"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px" class="fu">
+      <div class="tag">FAQ</div>
+      <h2 class="stitle">Frequently Asked Questions</h2>
+      <p class="ssub" style="margin:0 auto;max-width:560px">Quick answers to the questions we hear most from businesses exploring digital marketing services.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item fu" data-ocid="faq.item.1">
+        <div class="faq-q" tabindex="0">How long does it take to see SEO results?<div class="faq-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><p>SEO is a long-term strategy — most clients begin seeing measurable improvements in rankings and organic traffic within 3–6 months. Significant growth typically accelerates from month 6 onwards as domain authority builds. We set honest expectations in every client proposal.</p></div>
+      </div>
+      <div class="faq-item fu" data-ocid="faq.item.2">
+        <div class="faq-q" tabindex="0">What makes SearchLift different from other agencies?<div class="faq-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><p>We're obsessively focused on business outcomes, not vanity metrics. Every campaign has clear KPIs tied to revenue — not just rankings. We also provide full transparency with monthly reports showing exactly what we've done and what it's achieved.</p></div>
+      </div>
+      <div class="faq-item fu" data-ocid="faq.item.3">
+        <div class="faq-q" tabindex="0">Do you work with businesses outside Chennai?<div class="faq-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><p>Yes — while our roots are in Chennai, we serve clients across India and internationally. We have active campaigns running for businesses in Bangalore, Mumbai, Hyderabad, and several international markets. All client work is managed remotely with video calls and our project management platform.</p></div>
+      </div>
+      <div class="faq-item fu" data-ocid="faq.item.4">
+        <div class="faq-q" tabindex="0">What is included in the free SEO audit?<div class="faq-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><p>Our free audit covers technical SEO health (Core Web Vitals, crawl errors, site structure), keyword ranking analysis, competitor gap analysis, backlink profile review, and on-page optimisation opportunities. You'll receive a written report with prioritised recommendations — no sales pitch required.</p></div>
+      </div>
+      <div class="faq-item fu" data-ocid="faq.item.5">
+        <div class="faq-q" tabindex="0">What minimum budget do I need for Google Ads?<div class="faq-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><p>We recommend a minimum ad spend of ₹15,000/month to run effective Google Search campaigns for most industries in Chennai. Below this threshold, campaign learning is slow and results are inconsistent. Our management fee is separate and scales with your budget.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="ft">
+  <div class="container">
+    <div class="fg">
+      <div class="fb">
+        <a href="index.html" class="nl">SearchLift</a>
+        <p>Chennai's leading digital marketing agency helping businesses grow online through SEO, paid media, and web development.</p>
+        <div class="soc">
+          <a href="#" class="si2" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="si2" aria-label="Twitter"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+          <a href="#" class="si2" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="si2" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="fc"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="fc"><h4>Services</h4><ul><li><a href="services.html#seo">SEO Services</a></li><li><a href="services.html#digital">Digital Marketing</a></li><li><a href="services.html#webdev">Web Development</a></li><li><a href="services.html#local">Local SEO</a></li><li><a href="services.html#social">Social Media</a></li></ul></div>
+      <div class="fc">
+        <h4>Get In Touch</h4>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>3rd Floor, Nexus Tech Park, Anna Salai, Chennai – 600 002</span></div>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.69 19.79 19.79 0 01.09 1.1 2 2 0 012.08.09h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg><span>+91 44 2200 1234</span></div>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>hello@searchlift.in</span></div>
+      </div>
+    </div>
+    <div class="fb2">
+      <p>© <span id="yr"></span> SearchLift Technologies. All rights reserved.</p>
+      <p>Built with love using <a href="https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=searchlift" target="_blank" rel="noopener">caffeine.ai</a></p>
+    </div>
+  </div>
+</footer>
+<button id="bt" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>{nav.classList.toggle('sc',scrollY>40);document.getElementById('bt').classList.toggle('v',scrollY>400)},{passive:true});
+  const hb=document.getElementById('hb'),mm=document.getElementById('mm');
+  hb.addEventListener('click',()=>{const o=hb.classList.toggle('op');hb.setAttribute('aria-expanded',o);mm.classList.toggle('op',o);document.body.style.overflow=o?'hidden':''});
+  mm.addEventListener('click',e=>{if(e.target.tagName==='A'){hb.classList.remove('op');mm.classList.remove('op');document.body.style.overflow=''}});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  document.getElementById('bt').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+  /* IntersectionObserver */
+  const obs=new IntersectionObserver((es)=>es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('v'),i*80);obs.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+  /* Form Validation */
+  function showError(id,show){
+    const el=document.getElementById(id);
+    if(el){el.classList.toggle('show',show)}
+  }
+  function setError(input,show){
+    if(input){input.classList.toggle('error',show)}
+  }
+  function validateField(f){
+    const v=f.value.trim();
+    if(f.id==='firstName'||f.id==='lastName'){const ok=v.length>=2;setError(f,!ok);showError(f.id+'-err',!ok);return ok}
+    if(f.id==='email'){const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);setError(f,!ok);showError(f.id+'-err',!ok);return ok}
+    if(f.id==='phone'){const ok=/^[\d\s\+\-\(\)]{7,15}$/.test(v);setError(f,!ok);showError(f.id+'-err',!ok);return ok}
+    if(f.id==='service'){const ok=v!=='';setError(f,!ok);showError(f.id+'-err',!ok);return ok}
+    if(f.id==='message'){const ok=v.length>=20;setError(f,!ok);showError(f.id+'-err',!ok);return ok}
+    return true;
+  }
+
+  const fields=['firstName','lastName','email','phone','service','message'];
+  fields.forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.addEventListener('blur',()=>validateField(el));
+  });
+
+  document.getElementById('contactForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    let valid=true;
+    fields.forEach(id=>{
+      const el=document.getElementById(id);
+      if(el&&!validateField(el)) valid=false;
+    });
+    const priv=document.getElementById('privacy');
+    const privOk=priv.checked;
+    showError('privacy-err',!privOk);
+    if(!privOk) valid=false;
+
+    if(!valid) return;
+
+    const btn=document.getElementById('submitBtn');
+    btn.disabled=true;btn.textContent='Sending...';
+
+    setTimeout(()=>{
+      document.getElementById('contactForm').style.display='none';
+      document.getElementById('successMsg').classList.add('show');
+    },1200);
+  });
+
+  /* FAQ Accordion */
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    function toggle(){
+      const item=q.parentElement;
+      const isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+      if(!isOpen) item.classList.add('open');
+    }
+    q.addEventListener('click',toggle);
+    q.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle()}});
+  });
+</script>
+</body>
+</html>

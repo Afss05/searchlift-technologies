@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="post-title">Blog Post — SearchLift Technologies</title>
+  <meta name="description" id="post-meta" content="Expert digital marketing insights from SearchLift Technologies, Chennai." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--pd:#20417B;--pm:#1560bd;--pl:#1E90FF;--gr:linear-gradient(135deg,#20417B 0%,#1E90FF 100%);--gh:linear-gradient(160deg,#0f1f45 0%,#20417B 40%,#1560bd 70%,#1E90FF 100%);--td:#0f172a;--tm:#64748b;--bs:#f8fafc;--ba:#eef4fb;--r:14px;--sh:0 4px 24px rgba(30,60,130,.10);--sh2:0 12px 40px rgba(30,60,130,.20);--tr:.3s cubic-bezier(.4,0,.2,1)}
+    html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--td);background:#fff;overflow-x:hidden}
+    .container{max-width:1160px;margin:0 auto;padding:0 24px}
+    .tag{display:inline-block;background:rgba(30,144,255,.12);color:var(--pl);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:100px;padding:6px 18px;margin-bottom:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:100px;font-size:.95rem;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:var(--tr)}
+    .bp{background:var(--gr);color:#fff;box-shadow:0 4px 20px rgba(30,144,255,.38)}.bp:hover{transform:translateY(-2px)}
+    .bw{background:#fff;color:var(--pd);font-weight:700}.bw:hover{box-shadow:0 8px 28px rgba(0,0,0,.2);transform:translateY(-2px)}
+    .fu{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease}.fu.v{opacity:1;transform:translateY(0)}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .35s,box-shadow .35s}
+    #nav.sc{background:rgba(255,255,255,.97);box-shadow:0 2px 24px rgba(30,60,130,.12);backdrop-filter:blur(16px)}
+    .ni{max-width:1160px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nl2{font-size:1.35rem;font-weight:900;text-decoration:none;background:var(--gr);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.02em}
+    .nls{display:flex;align-items:center;gap:4px;list-style:none}
+    .nls a{text-decoration:none;font-size:.92rem;font-weight:500;padding:7px 14px;border-radius:8px;color:rgba(255,255,255,.88);transition:var(--tr);position:relative}
+    #nav.sc .nls a{color:var(--td)}.nls a:hover{background:rgba(255,255,255,.15)}
+    #nav.sc .nls a:hover{background:var(--ba);color:var(--pl)}
+    .nls a.ac::after{content:'';position:absolute;bottom:2px;left:14px;right:14px;height:2px;background:var(--gr);border-radius:2px}
+    #nav.sc .nls a.ac{color:var(--pl)}
+    .ncb{background:var(--gr);color:#fff;border:none;border-radius:100px;padding:10px 22px;font-size:.88rem;font-weight:700;cursor:pointer;text-decoration:none;transition:var(--tr);box-shadow:0 2px 14px rgba(30,144,255,.35)}
+    .ncb:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(30,144,255,.52)}
+    .hb{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
+    .hb span{display:block;width:24px;height:2.5px;background:#fff;border-radius:2px;transition:var(--tr)}
+    #nav.sc .hb span{background:var(--td)}
+    .hb.op span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}.hb.op span:nth-child(2){opacity:0}.hb.op span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+    .mm{display:none;position:fixed;inset:0;background:rgba(15,31,69,.97);backdrop-filter:blur(16px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;pointer-events:none;transition:opacity .35s}
+    .mm.op{opacity:1;pointer-events:all;display:flex}
+    .mm a{text-decoration:none;font-size:1.5rem;font-weight:700;color:#fff;padding:14px 40px;border-radius:var(--r);transition:var(--tr)}
+    .mm a:hover,.mm a.ac{background:rgba(30,144,255,.2);color:var(--pl)}
+    .mcb{margin-top:24px;background:var(--gr);color:#fff;border:none;border-radius:100px;padding:14px 40px;font-size:1.05rem;font-weight:700;cursor:pointer;text-decoration:none}
+    /* HERO */
+    .ph{background:var(--gh);padding:140px 0 80px;position:relative;overflow:hidden}
+    .ph::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:80px;background:#fff;clip-path:ellipse(60% 100% at 50% 100%)}
+    .phc{text-align:center;position:relative;z-index:1;max-width:780px;margin:0 auto}
+    .phc h1{font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:#fff;margin-bottom:16px;line-height:1.2}
+    .bc{display:flex;align-items:center;gap:8px;justify-content:center;margin-bottom:24px;flex-wrap:wrap}
+    .bc a,.bc span{font-size:.85rem;color:rgba(255,255,255,.65);text-decoration:none}.bc a:hover{color:#fff}.bc .sep{color:rgba(255,255,255,.35)}
+    .post-meta-bar{display:flex;align-items:center;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+    .post-meta-bar span{font-size:.85rem;color:rgba(255,255,255,.7);display:flex;align-items:center;gap:6px}
+    /* CONTENT */
+    #article{padding:80px 0;background:#fff}
+    .article-layout{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:start}
+    .article-body img{width:100%;border-radius:16px;margin:28px 0}
+    .article-body h2{font-size:1.5rem;font-weight:800;color:var(--td);margin:36px 0 14px}
+    .article-body h3{font-size:1.15rem;font-weight:700;color:var(--td);margin:28px 0 10px}
+    .article-body p{font-size:1rem;color:var(--tm);line-height:1.8;margin-bottom:18px}
+    .article-body ul,.article-body ol{padding-left:24px;margin-bottom:18px}
+    .article-body li{font-size:1rem;color:var(--tm);line-height:1.8;margin-bottom:6px}
+    .article-body blockquote{border-left:4px solid var(--pl);background:var(--ba);padding:20px 24px;border-radius:0 12px 12px 0;margin:28px 0;font-style:italic;color:var(--pd)}
+    .article-body strong{color:var(--td);font-weight:700}
+    .article-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:32px;padding-top:24px;border-top:1px solid #e2e8f0}
+    .article-tag{background:var(--ba);color:var(--pd);font-size:.78rem;font-weight:600;padding:5px 14px;border-radius:100px;text-decoration:none}
+    .article-tag:hover{background:var(--gr);color:#fff}
+    /* SIDEBAR */
+    .sidebar{position:sticky;top:100px}
+    .sidebar-card{background:var(--bs);border-radius:16px;padding:24px;margin-bottom:24px;border:1px solid rgba(30,60,130,.07)}
+    .sidebar-card h4{font-size:.88rem;font-weight:700;color:var(--td);margin-bottom:16px;text-transform:uppercase;letter-spacing:.06em}
+    .author-box{display:flex;gap:14px;align-items:center}
+    .author-av{width:56px;height:56px;border-radius:50%;background:var(--gr);display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0}
+    .author-name{font-weight:700;font-size:.92rem;margin-bottom:2px}
+    .author-role{font-size:.78rem;color:var(--tm)}
+    .related-item{display:flex;gap:12px;margin-bottom:16px;text-decoration:none;color:inherit}
+    .related-item:last-child{margin-bottom:0}
+    .related-item:hover .ri-title{color:var(--pl)}
+    .ri-img{width:60px;height:60px;border-radius:10px;object-fit:cover;flex-shrink:0}
+    .ri-title{font-size:.83rem;font-weight:600;line-height:1.4;color:var(--td);transition:var(--tr)}
+    .ri-date{font-size:.73rem;color:var(--tm);margin-top:4px}
+    .cta-sidebar{background:var(--gr);border-radius:16px;padding:28px 24px;text-align:center;margin-bottom:24px}
+    .cta-sidebar h4{color:#fff;font-size:1rem;font-weight:800;margin-bottom:8px}
+    .cta-sidebar p{color:rgba(255,255,255,.8);font-size:.84rem;margin-bottom:18px;line-height:1.5}
+    .cta-sidebar a{background:#fff;color:var(--pd);font-weight:700;padding:10px 20px;border-radius:100px;text-decoration:none;font-size:.88rem;display:block;transition:var(--tr)}
+    .cta-sidebar a:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    /* RELATED */
+    #related-section{padding:80px 0;background:var(--bs)}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+    .blog-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--sh);border:1px solid rgba(30,60,130,.06);transition:var(--tr);text-decoration:none;color:inherit;display:block}
+    .blog-card:hover{transform:translateY(-6px);box-shadow:var(--sh2)}
+    .blog-thumb{height:180px;overflow:hidden;position:relative}
+    .blog-thumb img{width:100%;height:100%;object-fit:cover;transition:var(--tr)}
+    .blog-card:hover .blog-thumb img{transform:scale(1.05)}
+    .blog-category{position:absolute;top:12px;left:12px;background:var(--gr);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:100px}
+    .blog-body{padding:20px}
+    .blog-meta{display:flex;align-items:center;gap:10px;font-size:.76rem;color:var(--tm);margin-bottom:10px}
+    .blog-body h3{font-size:.97rem;font-weight:700;line-height:1.4;color:var(--td)}
+    /* FOOTER */
+    #ft{background:#0a1628;color:rgba(255,255,255,.75);padding:72px 0 0}
+    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px;margin-bottom:48px}
+    .fb p{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.6);max-width:280px;margin:12px 0 24px}
+    .soc{display:flex;gap:12px}
+    .si2{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:var(--tr);text-decoration:none;color:rgba(255,255,255,.75)}
+    .si2:hover{background:var(--gr);border-color:transparent;color:#fff;transform:translateY(-3px)}
+    .fc h4{font-size:.9rem;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px}
+    .fc ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .fc ul a{text-decoration:none;color:rgba(255,255,255,.6);font-size:.9rem;transition:var(--tr)}.fc ul a:hover{color:var(--pl);padding-left:4px}
+    .ci{display:flex;gap:12px;margin-bottom:14px}.ci span{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.5}
+    .fb2{border-top:1px solid rgba(255,255,255,.08);padding:24px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .fb2 p{font-size:.84rem;color:rgba(255,255,255,.4)}.fb2 a{color:var(--pl);text-decoration:none}
+    #bt{position:fixed;bottom:28px;right:28px;z-index:800;width:48px;height:48px;border-radius:50%;background:var(--gr);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(30,144,255,.45);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:var(--tr)}
+    #bt.v{opacity:1;pointer-events:all}#bt:hover{transform:translateY(-3px)}
+    @media(max-width:900px){.nls,.nav-cta{display:none}.hb{display:flex}.article-layout{grid-template-columns:1fr}.sidebar{position:static}.fg{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.fg{grid-template-columns:1fr}.fb2{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<div id="progress-bar" style="position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#20417B,#1E90FF);z-index:9999;width:0%;transition:width 0.1s;pointer-events:none"></div>
+<nav id="nav">
+  <div class="ni">
+    <a href="index.html" class="nl2">SearchLift</a>
+    <ul class="nls">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li><li><a href="blog.html" class="ac">Blog</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="ncb">Get Free Audit</a></div>
+    <button class="hb" id="hb" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mm" id="mm">
+  <a href="index.html">Home</a><a href="about.html">About</a>
+  <a href="services.html">Services</a><a href="blog.html" class="ac">Blog</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="mcb">Get Free Audit</a>
+</div>
+
+<section class="ph">
+  <div class="container">
+    <div class="phc">
+      <div class="bc"><a href="index.html">Home</a><span class="sep">›</span><a href="blog.html">Blog</a><span class="sep">›</span><span id="bc-title">Article</span></div>
+      <div class="tag" id="hero-cat">SEO</div>
+      <h1 id="hero-title">Loading...</h1>
+      <div class="post-meta-bar">
+        <span>📅 <span id="hero-date"></span></span>
+        <span>⏱ <span id="hero-read"></span></span>
+        <span>✍️ <span id="hero-author"></span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="article">
+  <div class="container">
+    <div class="article-layout">
+      <article class="article-body fu" id="articleContent"></article>
+      <aside class="sidebar fu">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="author-box">
+            <div class="author-av" id="author-av">👩‍💻</div>
+            <div>
+              <div class="author-name" id="author-name">Priya Subramaniam</div>
+              <div class="author-role" id="author-role">Head of SEO, SearchLift</div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-sidebar">
+          <h4>Get a Free SEO Audit</h4>
+          <p>Discover what's holding your site back from page one.</p>
+          <a href="contact.html" data-ocid="post.cta_button">Book Free Audit →</a>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <div id="relatedSide"></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="related-section">
+  <div class="container">
+    <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:32px;text-align:center">More Articles You'll Love</h2>
+    <div class="related-grid" id="relatedGrid"></div>
+  </div>
+</section>
+
+<footer id="ft">
+  <div class="container">
+    <div class="fg">
+      <div class="fb">
+        <a href="index.html" class="nl2">SearchLift</a>
+        <p>Chennai's leading digital marketing agency helping businesses grow online through SEO, paid media, and web development.</p>
+        <div class="soc">
+          <a href="#" class="si2" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="si2" aria-label="Twitter"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+          <a href="#" class="si2" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="si2" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="fc"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="fc"><h4>Services</h4><ul><li><a href="services.html#seo">SEO Services</a></li><li><a href="services.html#digital">Digital Marketing</a></li><li><a href="services.html#webdev">Web Development</a></li><li><a href="services.html#local">Local SEO</a></li><li><a href="services.html#social">Social Media</a></li></ul></div>
+      <div class="fc">
+        <h4>Get In Touch</h4>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>3rd Floor, Nexus Tech Park, Anna Salai, Chennai – 600 002</span></div>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.69 19.79 19.79 0 01.09 1.1 2 2 0 012.08.09h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg><span>+91 44 2200 1234</span></div>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>hello@searchlift.in</span></div>
+      </div>
+    </div>
+    <div class="fb2">
+      <p>© <span id="yr"></span> SearchLift Technologies. All rights reserved.</p>
+      <p>Built with love using <a href="https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=searchlift" target="_blank" rel="noopener">caffeine.ai</a></p>
+    </div>
+  </div>
+</footer>
+<button id="bt" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>{nav.classList.toggle('sc',scrollY>40);document.getElementById('bt').classList.toggle('v',scrollY>400);const progress=(window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100;document.getElementById('progress-bar').style.width=progress+'%'},{passive:true});
+  const hb=document.getElementById('hb'),mm=document.getElementById('mm');
+  hb.addEventListener('click',()=>{const o=hb.classList.toggle('op');hb.setAttribute('aria-expanded',o);mm.classList.toggle('op',o);document.body.style.overflow=o?'hidden':''});
+  mm.addEventListener('click',e=>{if(e.target.tagName==='A'){hb.classList.remove('op');mm.classList.remove('op');document.body.style.overflow=''}});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  document.getElementById('bt').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+  const posts={
+    'seo-ranking-factors-2025':{cat:'SEO',title:'Top 12 Google Ranking Factors That Actually Matter in 2025',date:'Apr 8, 2026',read:'7 min read',author:'Priya Subramaniam',authorRole:'Head of SEO',authorEmoji:'👩‍💻',img:'https://picsum.photos/seed/seo1/1200/600',tags:['SEO','Google Algorithm','Organic Traffic','On-Page SEO'],body:`<img src="https://picsum.photos/seed/seo1/1200/600" alt="SEO Ranking Factors" /><p>Google's algorithm considers over 200 factors when ranking a page, but not all are created equal. After analysing hundreds of campaigns across industries, we've isolated the 12 signals that consistently move the needle in 2025.</p><h2>1. E-E-A-T: Experience, Expertise, Authoritativeness, Trustworthiness</h2><p>Google's quality rater guidelines now emphasise <strong>first-hand experience</strong> alongside expertise. Content written by proven practitioners consistently outperforms generic AI-generated text. Display author credentials prominently and demonstrate real-world knowledge in every piece you publish.</p><h2>2. Core Web Vitals</h2><p>LCP under 2.5 seconds, CLS below 0.1, and INP under 200ms are non-negotiable benchmarks. Sites that hit all three consistently rank in the top positions for competitive keywords in our tracking data.</p><blockquote>"Speed is the #1 correlate with first-page rankings we see in our Chennai client data — especially on mobile." — Priya Subramaniam, Head of SEO</blockquote><h2>3. Content Depth and Semantic Coverage</h2><p>A single long-form pillar article rarely outranks a well-structured topic cluster in 2025. Google rewards semantic completeness — covering related subtopics, answering follow-up questions, and linking to supporting content.</p><h2>4. Backlink Quality Over Quantity</h2><p>One editorial link from a DR 70+ authoritative site in your niche is worth more than 100 low-quality directory links. Focus on digital PR, expert roundups, and creating genuinely link-worthy resources.</p><h2>5. Mobile-First Indexing</h2><p>Google indexes the mobile version of your site first. If your mobile experience is degraded — slow, unresponsive, or has content missing vs. desktop — you will rank lower, period.</p><h2>6. Search Intent Alignment</h2><p>Matching the format, depth, and angle of your content to what searchers actually expect is critical. Informational intent demands comprehensive guides; transactional intent demands clear CTAs and product-focused content.</p><h2>7. User Engagement Signals</h2><p>While Google denies using click-through rate directly as a ranking factor, correlation data is strong. Higher CTR from SERPs combined with low bounce rates and long dwell times consistently precede ranking improvements.</p><h2>8. Internal Linking Architecture</h2><p>A strong internal link structure helps Google discover, crawl, and understand the hierarchy of your content. Cluster your content into topic silos with clear parent-child relationships and anchor text variation.</p><h2>9. Schema Markup</h2><p>Structured data doesn't directly boost rankings, but it enables rich snippets — which increase CTR by up to 30%. FAQ, HowTo, Article, and LocalBusiness schemas are high-priority for most businesses.</p><h2>10. HTTPS and Technical Security</h2><p>Still a ranking signal, but more importantly a trust signal. Ensure your SSL certificate is valid, there are no mixed content warnings, and your site passes Google's security checks.</p><h2>11. Local Signals for Location-Based Queries</h2><p>For Chennai businesses targeting local searches, NAP consistency, Google Business Profile completeness, and local citation authority are disproportionately impactful ranking signals.</p><h2>12. Content Freshness</h2><p>For time-sensitive topics, freshness matters. Update your top-performing articles quarterly with new statistics, examples, and insights. Add a "Last Updated" date to signal currency to both users and Google.</p>`},
+    'local-seo-chennai-guide':{cat:'SEO',title:'The Definitive Local SEO Guide for Chennai Businesses',date:'Apr 2, 2026',read:'9 min read',author:'Arjun Krishnamurthy',authorRole:'Founder & CEO',authorEmoji:'👨‍💼',img:'https://picsum.photos/seed/local1/1200/600',tags:['Local SEO','Chennai','Google Maps','GMB'],body:`<img src="https://picsum.photos/seed/local1/1200/600" alt="Local SEO Chennai" /><p>Chennai is one of India's most competitive digital markets. From Nungambakkam to OMR, local businesses are fighting for the same map pack positions. This guide covers every layer of local SEO that consistently delivers results for our Chennai clients.</p><h2>Why Local SEO Is Different</h2><p>Local SEO targets geographically-qualified searches — "near me", "in Chennai", and searches with local intent. The goal is to appear in three places: the map pack (3 results above organic), Google Maps, and local organic results.</p><h2>Step 1: Optimise Your Google Business Profile</h2><p>Your GBP is the single most impactful local SEO asset. Ensure every field is complete: business name (no keyword stuffing), category, description, hours, website, phone, and photos. Add at least 20 high-quality photos of your premises, team, and products.</p><blockquote>"Businesses with complete GBP profiles get 7× more clicks than incomplete ones. It takes 30 minutes — there's no excuse." — Arjun Krishnamurthy, CEO</blockquote><h2>Step 2: Build Local Citations</h2><p>Citations are online mentions of your NAP (Name, Address, Phone). Ensure consistency across JustDial, Sulekha, IndiaMart, Yelp, and the top 50 directories. Inconsistencies confuse Google and suppress your map pack rankings.</p><h2>Step 3: Generate and Manage Reviews</h2><p>Reviews are a direct map pack ranking signal. Build a systematic review request process — SMS or email customers within 24 hours of a transaction. Respond to every review within 48 hours, including negative ones.</p><h2>Step 4: Local Content Strategy</h2><p>Create content that references local landmarks, neighbourhoods, and community events relevant to your business. A dentist in Adyar should have content targeting "dentist in Adyar" and "teeth whitening near ECR" — not just generic dental content.</p><h2>Step 5: Local Link Building</h2><p>Earn links from local Chennai publications, business associations (CII, FICCI Tamil Nadu chapter), local event sponsorships, and partnerships with complementary non-competing local businesses.</p>`},
+    'google-ads-vs-facebook-ads':{cat:'Digital Marketing',title:'Google Ads vs. Facebook Ads: Where Should You Invest in 2026?',date:'Mar 28, 2026',read:'6 min read',author:'Deepa Natarajan',authorRole:'Paid Media Lead',authorEmoji:'👩‍📊',img:'https://picsum.photos/seed/ads1/1200/600',tags:['PPC','Google Ads','Facebook Ads','Paid Media'],body:`<img src="https://picsum.photos/seed/ads1/1200/600" alt="Google Ads vs Facebook Ads" /><p>Every business asks this question eventually. The honest answer is: it depends — but after managing millions in ad spend for Chennai businesses, we've identified clear patterns that should guide your decision.</p><h2>The Core Difference: Intent vs. Interruption</h2><p><strong>Google Ads</strong> captures demand. Users are actively searching for what you offer — they have intent. You pay to be the answer when they're looking.</p><p><strong>Facebook Ads</strong> creates demand. Users aren't searching for your product; you're interrupting their feed with a compelling reason to care. It requires stronger creative and often a longer sales cycle.</p><h2>When Google Ads Wins</h2><ul><li>High-intent, purchase-ready searches ("SEO agency Chennai", "AC repair near me")</li><li>Products/services with established search demand</li><li>Local service businesses targeting near-me searches</li><li>B2B with long sales cycles but high contract values</li></ul><h2>When Facebook Ads Wins</h2><ul><li>New product launches where search demand doesn't exist yet</li><li>Visual products (fashion, food, décor) that benefit from rich imagery/video</li><li>Retargeting website visitors and abandoned carts</li><li>Consumer products with emotional purchase triggers</li></ul><blockquote>"The best answer is usually both — Google to capture existing demand, Facebook to build future demand." — Deepa Natarajan, Paid Media Lead</blockquote><h2>Our Recommendation</h2><p>Start with Google Search for your highest-intent keywords to generate immediate leads, then layer Facebook retargeting to nurture prospects who didn't convert. Once Google proves ROI, expand into Facebook prospecting with lookalike audiences built from your customer list.</p>`},
+    'core-web-vitals-performance':{cat:'Web Dev',title:'Core Web Vitals: Why Your Website Speed Is Killing Your Rankings',date:'Mar 20, 2026',read:'8 min read',author:'Karthik Rajan',authorRole:'Creative Director',authorEmoji:'👨‍🎨',img:'https://picsum.photos/seed/webdev1/1200/600',tags:['Web Performance','Core Web Vitals','LCP','CLS'],body:`<img src="https://picsum.photos/seed/webdev1/1200/600" alt="Core Web Vitals" /><p>Google's Core Web Vitals became a confirmed ranking signal in 2021, and their weight has only increased since. In 2026, failing these metrics is costing businesses real rankings and real revenue.</p><h2>The Three Metrics That Matter</h2><h3>LCP — Largest Contentful Paint (Target: Under 2.5s)</h3><p>LCP measures how long it takes for the largest visible element on the page to load. Slow LCP means users see a blank or partially-loaded page — a terrible first impression that Google penalises.</p><h3>CLS — Cumulative Layout Shift (Target: Under 0.1)</h3><p>CLS measures visual stability — how much the page layout jumps around as it loads. Images without defined dimensions, late-loading ads, and web fonts are common culprits.</p><h3>INP — Interaction to Next Paint (Target: Under 200ms)</h3><p>INP measures responsiveness — how quickly the page responds to user interactions like clicks and taps. Heavy JavaScript and render-blocking scripts are the main offenders.</p><h2>How to Diagnose Your Scores</h2><ul><li>Google Search Console → Core Web Vitals report</li><li>PageSpeed Insights (field data + lab data)</li><li>Chrome DevTools → Lighthouse audit</li><li>GTmetrix for detailed waterfall analysis</li></ul><h2>Top Fixes That Move the Needle</h2><ol><li>Serve images in WebP/AVIF format and add explicit width/height attributes</li><li>Use a CDN to serve assets from geographically close servers</li><li>Defer non-critical JavaScript and remove unused plugins</li><li>Preload your LCP image with link rel="preload"</li><li>Use font-display: swap and preconnect to font servers</li></ol><blockquote>"A 1-second improvement in LCP can increase conversions by 7%. Speed is the cheapest conversion rate optimisation you can do." — Karthik Rajan</blockquote>`},
+    'instagram-reels-strategy':{cat:'Social Media',title:'How to Build a Winning Instagram Reels Strategy for B2B Brands',date:'Mar 15, 2026',read:'5 min read',author:'Priya Subramaniam',authorRole:'Head of SEO',authorEmoji:'👩‍💻',img:'https://picsum.photos/seed/social1/1200/600',tags:['Instagram','Reels','Social Media','B2B Marketing'],body:`<img src="https://picsum.photos/seed/social1/1200/600" alt="Instagram Reels Strategy" /><p>B2B brands have historically underused Instagram Reels, leaving massive organic reach on the table. In 2026, short-form video is the highest-reach format on the platform — and it works for B2B when done right.</p><h2>Why Reels Work for B2B</h2><p>Instagram's algorithm prioritises Reels for discovery. Unlike feed posts that primarily reach your existing followers, Reels are distributed to non-followers with matching interests. For B2B brands, this means your content can reach decision-makers who've never heard of you.</p><h2>The Three Reel Types That Drive B2B Results</h2><h3>1. Quick-Win Tips (30–45 seconds)</h3><p>Actionable, immediately-implementable advice in your area of expertise. "3 things your SEO agency should be doing but isn't." These build credibility and get saved — one of Instagram's strongest algorithmic signals.</p><h3>2. Behind-the-Scenes Process</h3><p>Show your team at work, your methodology, or a client campaign result (with permission). Authenticity outperforms polished production in the current Instagram environment.</p><h3>3. Myth-Busting</h3><p>"Everyone says [common belief] but here's what actually works" is a proven format that generates comments and shares — the metrics that feed the algorithm.</p><h2>The Posting Cadence That Works</h2><p>3–5 Reels per week is the sweet spot for organic growth. Consistency beats volume — a sustainable 4×/week schedule outperforms 10 posts one week and nothing the next.</p>`},
+    'ecommerce-seo-checklist':{cat:'SEO',title:'The Ultimate E-Commerce SEO Checklist: 40 Points Covering Every Layer',date:'Mar 8, 2026',read:'10 min read',author:'Priya Subramaniam',authorRole:'Head of SEO',authorEmoji:'👩‍💻',img:'https://picsum.photos/seed/ecom1/1200/600',tags:['E-Commerce SEO','Technical SEO','Product Pages','Schema'],body:`<img src="https://picsum.photos/seed/ecom1/1200/600" alt="E-Commerce SEO" /><p>E-commerce SEO is uniquely complex: thousands of product pages, faceted navigation, duplicate content from variants, and seasonal demand fluctuations all create challenges that don't exist for standard websites.</p><h2>Technical Foundation (10 Points)</h2><ul><li>XML sitemap includes all indexable product and category pages</li><li>Canonical tags correctly handle variant URLs (colour, size)</li><li>Faceted navigation managed with noindex or canonical</li><li>Core Web Vitals passing on both mobile and desktop</li><li>Product schema with price, availability, and review markup</li></ul><h2>Category Page Optimisation (10 Points)</h2><ul><li>Unique, keyword-rich H1 for every category</li><li>Above-the-fold introductory text (150–300 words) with primary keyword</li><li>Filter options don't create duplicate indexable URLs</li><li>FAQ section targeting long-tail category questions</li></ul><blockquote>"Category pages are the most underoptimised asset on most e-commerce sites. A well-structured category page can drive 5× more organic revenue than any individual product page." — SearchLift SEO Team</blockquote><h2>Product Page Optimisation (10 Points)</h2><ul><li>Unique product description — no manufacturer boilerplate</li><li>High-resolution images with descriptive alt text for every variant</li><li>Customer reviews visible on page</li><li>Structured data: Product, Review, AggregateRating schemas</li></ul><h2>Content and Off-Page (10 Points)</h2><ul><li>Blog covering buying guides, comparisons, and "best of" articles</li><li>Editorial links from relevant industry publications</li><li>Reviews solicited via post-purchase email sequence</li><li>Local SEO for any physical retail presence</li></ul>`}
+  };
+
+  const slug=new URLSearchParams(location.search).get('slug')||'seo-ranking-factors-2025';
+  const post=posts[slug]||posts['seo-ranking-factors-2025'];
+
+  document.getElementById('post-title').textContent=post.title+' — SearchLift Technologies';
+  document.getElementById('hero-cat').textContent=post.cat;
+  document.getElementById('hero-title').textContent=post.title;
+  document.getElementById('bc-title').textContent=post.title.substring(0,35)+'...';
+  document.getElementById('hero-date').textContent=post.date;
+  document.getElementById('hero-read').textContent=post.read;
+  document.getElementById('hero-author').textContent=post.author;
+  document.getElementById('author-av').textContent=post.authorEmoji;
+  document.getElementById('author-name').textContent=post.author;
+  document.getElementById('author-role').textContent=post.authorRole+', SearchLift';
+
+  document.getElementById('articleContent').innerHTML=post.body+`<div class="article-tags">${post.tags.map(t=>`<a href="blog.html" class="article-tag">#${t}</a>`).join('')}</div>`;
+
+  const related=Object.entries(posts).filter(([s])=>s!==slug).slice(0,3);
+  document.getElementById('relatedSide').innerHTML=related.map(([s,p])=>`<a href="blogpost.html?slug=${s}" class="related-item"><img class="ri-img" src="${p.img}" alt="${p.title}" loading="lazy" /><div><div class="ri-title">${p.title}</div><div class="ri-date">${p.date}</div></div></a>`).join('');
+  document.getElementById('relatedGrid').innerHTML=related.map(([s,p],i)=>`<a href="blogpost.html?slug=${s}" class="blog-card fu" data-ocid="related.item.${i+1}"><div class="blog-thumb"><img src="${p.img}" alt="${p.title}" loading="lazy"/><div class="blog-category">${p.cat}</div></div><div class="blog-body"><div class="blog-meta"><span>📅 ${p.date}</span><span>⏱ ${p.read}</span></div><h3>${p.title}</h3></div></a>`).join('');
+
+  const obs=new IntersectionObserver((es)=>es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('v'),i*80);obs.unobserve(e.target)}}),{threshold:.1});
+  document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

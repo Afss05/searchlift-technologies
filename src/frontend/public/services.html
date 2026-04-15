@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — SearchLift Technologies | SEO, Digital Marketing & Web Dev Chennai</title>
+  <meta name="description" content="Explore SearchLift Technologies' full suite of digital services: SEO, Digital Marketing, Website Development, Local SEO, and Social Media Handling in Chennai." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--pd:#20417B;--pm:#1560bd;--pl:#1E90FF;--gr:linear-gradient(135deg,#20417B 0%,#1E90FF 100%);--gh:linear-gradient(160deg,#0f1f45 0%,#20417B 40%,#1560bd 70%,#1E90FF 100%);--td:#0f172a;--tm:#64748b;--bs:#f8fafc;--ba:#eef4fb;--r:14px;--sh:0 4px 24px rgba(30,60,130,.10);--sh2:0 12px 40px rgba(30,60,130,.20);--tr:.3s cubic-bezier(.4,0,.2,1)}
+    html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--td);background:#fff;overflow-x:hidden}
+    .container{max-width:1160px;margin:0 auto;padding:0 24px}
+    .tag{display:inline-block;background:rgba(30,144,255,.12);color:var(--pl);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:100px;padding:6px 18px;margin-bottom:16px}
+    .stitle{font-size:clamp(1.8rem,4vw,2.75rem);font-weight:800;line-height:1.18;color:var(--td);margin-bottom:16px}
+    .ssub{font-size:1.05rem;color:var(--tm);line-height:1.7;max-width:560px}
+    .sh{text-align:center;margin-bottom:56px}.sh .ssub{margin:0 auto}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:100px;font-size:.95rem;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:var(--tr)}
+    .bp{background:var(--gr);color:#fff;box-shadow:0 4px 20px rgba(30,144,255,.38)}.bp:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(30,144,255,.55)}
+    .bo{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}.bo:hover{background:rgba(255,255,255,.15);transform:translateY(-2px)}
+    .bw{background:#fff;color:var(--pd);font-weight:700}.bw:hover{box-shadow:0 8px 28px rgba(0,0,0,.2);transform:translateY(-2px)}
+    .fu{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease}.fu.v{opacity:1;transform:translateY(0)}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .35s,box-shadow .35s}
+    #nav.sc{background:rgba(255,255,255,.97);box-shadow:0 2px 24px rgba(30,60,130,.12);backdrop-filter:blur(16px)}
+    .ni{max-width:1160px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nl{font-size:1.35rem;font-weight:900;text-decoration:none;background:var(--gr);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.02em}
+    .nls{display:flex;align-items:center;gap:4px;list-style:none}
+    .nls a{text-decoration:none;font-size:.92rem;font-weight:500;padding:7px 14px;border-radius:8px;color:rgba(255,255,255,.88);transition:var(--tr);position:relative}
+    #nav.sc .nls a{color:var(--td)}.nls a:hover{background:rgba(255,255,255,.15)}
+    #nav.sc .nls a:hover{background:var(--ba);color:var(--pl)}
+    .nls a.ac::after{content:'';position:absolute;bottom:2px;left:14px;right:14px;height:2px;background:var(--gr);border-radius:2px}
+    #nav.sc .nls a.ac{color:var(--pl)}
+    .ncb{background:var(--gr);color:#fff;border:none;border-radius:100px;padding:10px 22px;font-size:.88rem;font-weight:700;cursor:pointer;text-decoration:none;transition:var(--tr);box-shadow:0 2px 14px rgba(30,144,255,.35)}
+    .ncb:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(30,144,255,.52)}
+    .hb{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
+    .hb span{display:block;width:24px;height:2.5px;background:#fff;border-radius:2px;transition:var(--tr)}
+    #nav.sc .hb span{background:var(--td)}
+    .hb.op span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}.hb.op span:nth-child(2){opacity:0}.hb.op span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+    .mm{display:none;position:fixed;inset:0;background:rgba(15,31,69,.97);backdrop-filter:blur(16px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;pointer-events:none;transition:opacity .35s}
+    .mm.op{opacity:1;pointer-events:all;display:flex}
+    .mm a{text-decoration:none;font-size:1.5rem;font-weight:700;color:#fff;padding:14px 40px;border-radius:var(--r);transition:var(--tr)}
+    .mm a:hover,.mm a.ac{background:rgba(30,144,255,.2);color:var(--pl)}
+    .mcb{margin-top:24px;background:var(--gr);color:#fff;border:none;border-radius:100px;padding:14px 40px;font-size:1.05rem;font-weight:700;cursor:pointer;text-decoration:none}
+    /* PAGE HERO */
+    .ph{background:var(--gh);padding:140px 0 80px;position:relative;overflow:hidden}
+    .ph::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:80px;background:#fff;clip-path:ellipse(60% 100% at 50% 100%)}
+    .phc{text-align:center;position:relative;z-index:1}.phc h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;color:#fff;margin-bottom:16px;letter-spacing:-.03em}
+    .phc p{font-size:1.1rem;color:rgba(255,255,255,.78);max-width:560px;margin:0 auto;line-height:1.7}
+    .bc{display:flex;align-items:center;gap:8px;justify-content:center;margin-bottom:24px}
+    .bc a,.bc span{font-size:.85rem;color:rgba(255,255,255,.65);text-decoration:none}.bc a:hover{color:#fff}.bc .sep{color:rgba(255,255,255,.35)}
+    /* SERVICE DETAIL */
+    .svc{padding:100px 0}
+    .svc:nth-child(odd){background:#fff}
+    .svc:nth-child(even){background:var(--bs)}
+    .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+    .svc-grid.rev{direction:rtl}
+    .svc-grid.rev>*{direction:ltr}
+    .svc-visual{border-radius:20px;overflow:hidden}
+    .svc-img{height:400px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:5rem;position:relative;overflow:hidden}
+    .svc-img::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.08) 0%,transparent 60%)}
+    .svc-img.c1{background:linear-gradient(135deg,#20417B,#1E90FF)}
+    .svc-img.c2{background:linear-gradient(135deg,#1560bd,#38bdf8)}
+    .svc-img.c3{background:linear-gradient(135deg,#0f1f45,#1E90FF)}
+    .svc-img.c4{background:linear-gradient(135deg,#1E90FF,#7dd3fc)}
+    .svc-img.c5{background:linear-gradient(135deg,#20417B,#38bdf8)}
+    .svc-content .tag{display:block}
+    .svc-content p{font-size:.95rem;color:var(--tm);line-height:1.75;margin-bottom:16px}
+    .features{list-style:none;display:flex;flex-direction:column;gap:10px;margin:20px 0 28px}
+    .features li{display:flex;align-items:flex-start;gap:12px;font-size:.92rem;color:var(--td)}
+    .features li::before{content:'✓';width:22px;height:22px;border-radius:50%;background:var(--gr);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;flex-shrink:0;margin-top:1px}
+    /* PACKAGES */
+    #packages{padding:100px 0;background:var(--bs)}
+    .pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+    .pkg{background:#fff;border-radius:20px;padding:40px 32px;border:1px solid #e2e8f0;transition:var(--tr);position:relative}
+    .pkg:hover{transform:translateY(-6px);box-shadow:var(--sh2);border-color:rgba(30,144,255,.25)}
+    .pkg.popular{border-color:rgba(30,144,255,.4);box-shadow:0 8px 32px rgba(30,144,255,.15)}
+    .popular-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gr);color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 18px;border-radius:100px;white-space:nowrap}
+    .pkg-name{font-size:.85rem;font-weight:700;color:var(--pl);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+    .pkg-price{font-size:2.4rem;font-weight:900;color:var(--td);line-height:1;margin-bottom:4px}
+    .pkg-period{font-size:.85rem;color:var(--tm)}
+    .pkg-desc{font-size:.88rem;color:var(--tm);margin:16px 0 20px;line-height:1.6}
+    .pkg-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+    .pkg-features li{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--td)}
+    .pkg-features li span{font-size:.8rem}
+    .pkg-btn{width:100%;display:flex;justify-content:center;padding:12px;border-radius:100px;font-size:.92rem;font-weight:700;text-decoration:none;transition:var(--tr);background:var(--ba);color:var(--pd);border:none;cursor:pointer}
+    .pkg.popular .pkg-btn{background:var(--gr);color:#fff;box-shadow:0 4px 20px rgba(30,144,255,.35)}
+    .pkg-btn:hover{transform:translateY(-2px)}
+    /* CTA */
+    #scta{padding:100px 0;background:#fff}
+    .cb{background:var(--gr);border-radius:24px;padding:72px 56px;text-align:center;position:relative;overflow:hidden}
+    .cb::before{content:'';position:absolute;top:-60px;right:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.07)}
+    .cb h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:#fff;margin-bottom:16px;position:relative;z-index:1}
+    .cb p{color:rgba(255,255,255,.8);font-size:1.08rem;margin-bottom:36px;position:relative;z-index:1}
+    .cbs{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+    /* FOOTER */
+    #ft{background:#0a1628;color:rgba(255,255,255,.75);padding:72px 0 0}
+    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px;margin-bottom:48px}
+    .fb p{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.6);max-width:280px;margin:12px 0 24px}
+    .soc{display:flex;gap:12px}
+    .si2{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:var(--tr);text-decoration:none;color:rgba(255,255,255,.75)}
+    .si2:hover{background:var(--gr);border-color:transparent;color:#fff;transform:translateY(-3px)}
+    .fc h4{font-size:.9rem;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px}
+    .fc ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .fc ul a{text-decoration:none;color:rgba(255,255,255,.6);font-size:.9rem;transition:var(--tr)}.fc ul a:hover{color:var(--pl);padding-left:4px}
+    .ci{display:flex;gap:12px;margin-bottom:14px}.ci span{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.5}
+    .fb2{border-top:1px solid rgba(255,255,255,.08);padding:24px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .fb2 p{font-size:.84rem;color:rgba(255,255,255,.4)}.fb2 a{color:var(--pl);text-decoration:none}
+    #bt{position:fixed;bottom:28px;right:28px;z-index:800;width:48px;height:48px;border-radius:50%;background:var(--gr);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(30,144,255,.45);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:var(--tr)}
+    #bt.v{opacity:1;pointer-events:all}#bt:hover{transform:translateY(-3px)}
+    @media(max-width:900px){.nls,.nav-cta{display:none}.hb{display:flex}.svc-grid,.svc-grid.rev{grid-template-columns:1fr;direction:ltr}.fg{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.cb{padding:48px 28px}.fg{grid-template-columns:1fr}.fb2{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <div class="ni">
+    <a href="index.html" class="nl">SearchLift</a>
+    <ul class="nls">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="ac">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="ncb">Get Free Audit</a></div>
+    <button class="hb" id="hb" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mm" id="mm">
+  <a href="index.html">Home</a><a href="about.html">About</a>
+  <a href="services.html" class="ac">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="mcb">Get Free Audit</a>
+</div>
+
+<section class="ph">
+  <div class="container">
+    <div class="phc">
+      <div class="bc"><a href="index.html">Home</a><span class="sep">›</span><span>Services</span></div>
+      <h1>Our Digital Marketing Services</h1>
+      <p>End-to-end digital solutions designed to drive measurable growth for your Chennai business — from search to social.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO -->
+<section id="seo" class="svc">
+  <div class="container">
+    <div class="svc-grid">
+      <div class="svc-visual fu"><div class="svc-img c1">🔍</div></div>
+      <div class="svc-content fu">
+        <div class="tag">Service 01</div>
+        <h2 class="stitle">Search Engine Optimisation</h2>
+        <p>Achieve sustainable first-page rankings that drive qualified organic traffic to your website. Our SEO methodology is built on technical excellence, compelling content, and authoritative link building.</p>
+        <p>We don't chase algorithm shortcuts — we build rankings that last, with full transparency on every tactic used.</p>
+        <ul class="features">
+          <li>Technical SEO audit and on-page optimisation</li>
+          <li>Keyword research aligned to buyer intent</li>
+          <li>Content strategy and blog creation</li>
+          <li>Authority link building campaigns</li>
+          <li>Core Web Vitals and page speed optimisation</li>
+          <li>Monthly ranking and traffic reports</li>
+        </ul>
+        <a href="contact.html" class="btn bp" data-ocid="seo.cta_button">Get SEO Proposal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Digital Marketing -->
+<section id="digital" class="svc">
+  <div class="container">
+    <div class="svc-grid rev">
+      <div class="svc-visual fu"><div class="svc-img c2">📣</div></div>
+      <div class="svc-content fu">
+        <div class="tag">Service 02</div>
+        <h2 class="stitle">Digital Marketing</h2>
+        <p>Multi-channel paid and earned media campaigns that reach your ideal customers at every stage of their journey — from awareness to purchase and beyond.</p>
+        <p>We manage Google Ads, Meta Ads, YouTube, and display networks with a relentless focus on ROI and cost per acquisition.</p>
+        <ul class="features">
+          <li>Google Search &amp; Shopping campaigns</li>
+          <li>Facebook and Instagram ad management</li>
+          <li>YouTube video advertising</li>
+          <li>Retargeting and audience segmentation</li>
+          <li>Landing page creation and A/B testing</li>
+          <li>Full-funnel attribution reporting</li>
+        </ul>
+        <a href="contact.html" class="btn bp" data-ocid="digital.cta_button">Start Advertising</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Web Dev -->
+<section id="webdev" class="svc">
+  <div class="container">
+    <div class="svc-grid">
+      <div class="svc-visual fu"><div class="svc-img c3">💻</div></div>
+      <div class="svc-content fu">
+        <div class="tag">Service 03</div>
+        <h2 class="stitle">Website Development</h2>
+        <p>We build blazing-fast, conversion-optimised websites that not only look premium but are engineered to rank on Google and turn visitors into customers.</p>
+        <p>From landing pages to full e-commerce platforms, every project is built with clean code, mobile-first design, and SEO baked in from day one.</p>
+        <ul class="features">
+          <li>Custom design aligned to your brand</li>
+          <li>Mobile-first, fully responsive layouts</li>
+          <li>Core Web Vitals score ≥ 90</li>
+          <li>E-commerce &amp; WooCommerce development</li>
+          <li>CMS integration (WordPress, Webflow)</li>
+          <li>Ongoing maintenance and support</li>
+        </ul>
+        <a href="contact.html" class="btn bp" data-ocid="webdev.cta_button">Build My Website</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Local SEO -->
+<section id="local" class="svc">
+  <div class="container">
+    <div class="svc-grid rev">
+      <div class="svc-visual fu"><div class="svc-img c4">📍</div></div>
+      <div class="svc-content fu">
+        <div class="tag">Service 04</div>
+        <h2 class="stitle">Local SEO</h2>
+        <p>Dominate "near me" searches and Google Maps results for your area. Local SEO is essential for any Chennai business that serves customers in a specific geography.</p>
+        <p>We optimise your Google Business Profile, build local citations, and generate authentic reviews that drive real foot traffic and enquiries.</p>
+        <ul class="features">
+          <li>Google Business Profile optimisation</li>
+          <li>Local citation building and cleanup</li>
+          <li>Review generation strategy</li>
+          <li>Local keyword targeting</li>
+          <li>Map pack ranking optimisation</li>
+          <li>Multi-location management</li>
+        </ul>
+        <a href="contact.html" class="btn bp" data-ocid="local.cta_button">Dominate Locally</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media -->
+<section id="social" class="svc">
+  <div class="container">
+    <div class="svc-grid">
+      <div class="svc-visual fu"><div class="svc-img c5">📱</div></div>
+      <div class="svc-content fu">
+        <div class="tag">Service 05</div>
+        <h2 class="stitle">Social Media Handling</h2>
+        <p>Build a loyal community and amplify your brand's reach with a strategic, consistent social media presence across Instagram, Facebook, LinkedIn, and beyond.</p>
+        <p>We handle everything from content creation and scheduling to community management and monthly performance analytics.</p>
+        <ul class="features">
+          <li>Social media strategy and content calendar</li>
+          <li>Branded graphic design and video content</li>
+          <li>Daily posting and community management</li>
+          <li>Influencer outreach and collaboration</li>
+          <li>Hashtag research and trend capitalisation</li>
+          <li>Monthly engagement and growth reports</li>
+        </ul>
+        <a href="contact.html" class="btn bp" data-ocid="social.cta_button">Grow My Social</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section id="packages">
+  <div class="container">
+    <div class="sh fu">
+      <div class="tag">Pricing</div>
+      <h2 class="stitle">Simple, Transparent Packages</h2>
+      <p class="ssub">Choose the plan that fits your growth goals. All plans include a dedicated account manager and monthly reporting.</p>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg fu" data-ocid="pkg.item.1">
+        <div class="pkg-name">Starter</div>
+        <div class="pkg-price">₹18,000</div>
+        <div class="pkg-period">/ month</div>
+        <div class="pkg-desc">Perfect for small businesses ready to establish their digital presence.</div>
+        <ul class="pkg-features">
+          <li><span>✓</span>SEO — 10 keywords</li>
+          <li><span>✓</span>Google Business Profile</li>
+          <li><span>✓</span>4 social media posts/week</li>
+          <li><span>✓</span>Monthly report</li>
+          <li><span>✓</span>Email support</li>
+        </ul>
+        <a href="contact.html" class="pkg-btn" data-ocid="pkg.starter_button">Get Started</a>
+      </div>
+      <div class="pkg popular fu" data-ocid="pkg.item.2">
+        <div class="popular-badge">Most Popular</div>
+        <div class="pkg-name">Growth</div>
+        <div class="pkg-price">₹42,000</div>
+        <div class="pkg-period">/ month</div>
+        <div class="pkg-desc">For businesses serious about scaling organic traffic and leads.</div>
+        <ul class="pkg-features">
+          <li><span>✓</span>SEO — 30 keywords</li>
+          <li><span>✓</span>Google &amp; Meta Ads (₹20k budget)</li>
+          <li><span>✓</span>7 social media posts/week</li>
+          <li><span>✓</span>2 blog articles/month</li>
+          <li><span>✓</span>Bi-weekly reporting</li>
+          <li><span>✓</span>Dedicated account manager</li>
+        </ul>
+        <a href="contact.html" class="pkg-btn" data-ocid="pkg.growth_button">Get Started</a>
+      </div>
+      <div class="pkg fu" data-ocid="pkg.item.3">
+        <div class="pkg-name">Enterprise</div>
+        <div class="pkg-price">Custom</div>
+        <div class="pkg-period">pricing</div>
+        <div class="pkg-desc">Full-suite digital marketing for ambitious brands wanting market leadership.</div>
+        <ul class="pkg-features">
+          <li><span>✓</span>Unlimited keywords</li>
+          <li><span>✓</span>All paid channels managed</li>
+          <li><span>✓</span>Website development included</li>
+          <li><span>✓</span>Daily social media management</li>
+          <li><span>✓</span>Weekly strategy calls</li>
+          <li><span>✓</span>Priority 24/7 support</li>
+        </ul>
+        <a href="contact.html" class="pkg-btn" data-ocid="pkg.enterprise_button">Talk to Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scta">
+  <div class="container">
+    <div class="cb fu">
+      <h2>Not Sure Which Service You Need?</h2>
+      <p>Book a free 30-minute strategy call and our team will audit your digital presence and recommend the right growth plan.</p>
+      <div class="cbs">
+        <a href="contact.html" class="btn bw" data-ocid="services.cta_button">Book Free Strategy Call</a>
+        <a href="about.html" class="btn bo" data-ocid="services.about_button">Learn About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="ft">
+  <div class="container">
+    <div class="fg">
+      <div class="fb">
+        <a href="index.html" class="nl">SearchLift</a>
+        <p>Chennai's leading digital marketing agency helping businesses grow online through SEO, paid media, and web development.</p>
+        <div class="soc">
+          <a href="#" class="si2" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="si2" aria-label="Twitter"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+          <a href="#" class="si2" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="si2" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="fc"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="fc"><h4>Services</h4><ul><li><a href="#seo">SEO Services</a></li><li><a href="#digital">Digital Marketing</a></li><li><a href="#webdev">Web Development</a></li><li><a href="#local">Local SEO</a></li><li><a href="#social">Social Media</a></li></ul></div>
+      <div class="fc">
+        <h4>Get In Touch</h4>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>3rd Floor, Nexus Tech Park, Anna Salai, Chennai – 600 002</span></div>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.69 19.79 19.79 0 01.09 1.1 2 2 0 012.08.09h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg><span>+91 44 2200 1234</span></div>
+        <div class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(30,144,255,.9)" stroke-width="2" style="flex-shrink:0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>hello@searchlift.in</span></div>
+      </div>
+    </div>
+    <div class="fb2">
+      <p>© <span id="yr"></span> SearchLift Technologies. All rights reserved.</p>
+      <p>Built with love using <a href="https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=searchlift" target="_blank" rel="noopener">caffeine.ai</a></p>
+    </div>
+  </div>
+</footer>
+<button id="bt" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>{nav.classList.toggle('sc',scrollY>40);document.getElementById('bt').classList.toggle('v',scrollY>400)},{passive:true});
+  const hb=document.getElementById('hb'),mm=document.getElementById('mm');
+  hb.addEventListener('click',()=>{const o=hb.classList.toggle('op');hb.setAttribute('aria-expanded',o);mm.classList.toggle('op',o);document.body.style.overflow=o?'hidden':''});
+  mm.addEventListener('click',e=>{if(e.target.tagName==='A'){hb.classList.remove('op');mm.classList.remove('op');document.body.style.overflow=''}});
+  const obs=new IntersectionObserver((es)=>es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('v'),i*80);obs.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+  document.getElementById('bt').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

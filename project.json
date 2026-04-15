@@ -1,0 +1,26 @@
+{
+  "overview": "SearchLift Technologies is a premium, fully responsive multi-page website for a digital marketing agency. It features a modern glassmorphism design with blue gradients, animated hero sections, and conversion-focused pages covering SEO, digital marketing, website development, blog content, and a lead-capturing contact form.",
+  "features": [
+    "5-page website with React Router navigation (Home, About, Services, Blog, Contact)",
+    "Animated hero with floating geometric shapes and gradient background",
+    "Glassmorphism card design with backdrop blur and soft shadows",
+    "Blog listing with single post view, skeleton loading states, and sample SEO content",
+    "Contact form with full validation, success state, and Google Maps embed",
+    "Sticky navbar with mobile hamburger menu and active route highlighting",
+    "Scroll-triggered fade-in animations using Intersection Observer",
+    "Statistics counter section, process steps, and industry sections",
+    "Fully responsive layout for mobile, tablet, and desktop",
+    "Inter font, Lucide icons, and consistent blue gradient (#20417B to #1E90FF) design system"
+  ],
+  "category": "showcase",
+  "tags": [
+    "digital-marketing",
+    "agency",
+    "seo",
+    "multi-page",
+    "landing-page",
+    "glassmorphism",
+    "responsive"
+  ],
+  "last_updated": "2026-04-14T10:34:51.999Z"
+}
